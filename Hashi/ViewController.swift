@@ -8,10 +8,21 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var userNameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
+        // Loads the view
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        // Sets a value just like in c#
+        userNameTextField.placeholder = "Lukaboi";
+        passwordTextField.placeholder = "Lukaboi";
+    }
+    
+    // Action when button is pressed
+    @IBAction func logInButtonPressed(_ sender: UIButton) {
+        print("Login button pressed");
     }
 }
 
