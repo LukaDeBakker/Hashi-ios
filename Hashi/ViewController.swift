@@ -25,5 +25,3 @@ class ViewController: UIViewController {
         print("Login button pressed");
     }
 }
-
-
